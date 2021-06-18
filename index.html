@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- Menu mobile -->
+    <aside class="aside bg-gray-100" id="aside">
+      <header class="aside__header">
+        <img src="icons/chevron.svg" id="open" alt="Sidebar" />
+        <img src="icons/market.svg" alt="Icono supermercado" />
+        <h1>Tienda Deliberry</h1>
+        <img src="./icons/close.svg" id="close" alt="Cerrar sidebar" />
+      </header>
+
+      <section class="aside__body">
+        <h3 class="text-xl font-semibold text-red-500">
+          Selecciona una categoría
+        </h3>
+
+        <div class="aside__products-container">
+          <article class="category" data-category="0">
+            <img src="./icons/market.svg" alt="Todos los productos" />
+            <p>Todos los productos</p>
+          </article>
+
+          <article class="category" data-category="1">
+            <img src="./icons/fast-food.svg" alt="Cocina rápida" />
+            <p>Cocina rápida</p>
+          </article>
+
+          <article class="category" data-category="2">
+            <img src="./icons/diet.svg" alt="Cocina fuego lento" />
+            <p>Cocina fuego lento</p>
+          </article>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Menu tablet, desktop -->
+    <header class="mt-5 header-desktop">
+      <section class="aside__body">
+        <h3 class="text-xl font-semibold text-red-500">
+          Selecciona una categoría
+        </h3>
+
+        <div class="aside__products-container">
+          <article class="category" data-category="0">
+            <img src="./icons/market.svg" alt="Todos los productos" />
+            <p>Todos los productos</p>
+          </article>
+
+          <article class="category" data-category="1">
+            <img src="./icons/fast-food.svg" alt="Cocina rápida" />
+            <p>Cocina rápida</p>
+          </article>
+
+          <article class="category" data-category="2">
+            <img src="./icons/diet.svg" alt="Cocina fuego lento" />
+            <p>Cocina fuego lento</p>
+          </article>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div
+        class="
+          grid
+          2xl:grid-cols-5
+          xl:grid-cols-4
+          lg:grid-cols-3
+          sm:grid-cols-2
+          grid-cols-1
+          gap-x-6 gap-y-12
+          w-full
+          mt-6
+          px-5
+          mt-16
+          mb-16
+        "
+      ></div>
+    </main>
+
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
